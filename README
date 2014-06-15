@@ -1,0 +1,1 @@
+This will say hello and stuff. It installs to ~/hin by default. To change instal location, use the install command with the option --prefix=$PREFIX to install it whereever.
