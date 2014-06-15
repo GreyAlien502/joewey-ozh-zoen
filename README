@@ -1,1 +1,5 @@
-This will say hello and stuff. It installs to ~/hin by default. To change instal location, use the install command with the option --prefix=$PREFIX to install it whereever.
+This will say hello and stuff
+It installs to ~/bin by default.
+To change instal location, use the
+./instal.sh followed by the folder 
+where you want it installed.
