@@ -1,5 +1,3 @@
-This will say hello and stuff
-It installs to ~/bin by default.
-To change instal location, use the
-./instal.sh followed by the folder 
-where you want it installed.
+This will say hello and stuff It installs to ~/bin by default. 
+To change instal location, use the ./instal.sh followed by 
+the folder where you want it installed.
