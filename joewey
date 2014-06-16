@@ -1,5 +1,40 @@
 #!/bin/bash
 #This is the whole file
-echo JOEWEY OZH NYONY
-echo KOEWEY OZH ZOEN
-echo eyh oen
+command=${1:-jes}
+nuvolang=${2:-ng}
+lang=`cat $HOME/.joewey`
+
+if [ "$command" = "jes" ];then
+	if [ "$lang" = "ng" ];then
+		echo JOEWEY OZH NYONY
+		echo KOEWEY OZH ZOEN
+		echo eyh oen
+	elif [ "$lang" = "en" ];then
+		echo Hello to you!
+		echo Hello world,
+		echo that is so bad.
+	elif [ "$lang" = "es" ];then
+		echo ¡Hola a ti!
+		echo !Hola mundo!
+		echo que es tan malo.
+	elif [ "$lang" = "fr" ];then
+		echo Bonjour a toi !
+		echo Bonjour au monde !
+		echo qui est tellement mauvais.  
+	fi
+elif [ "$command" = "ngezh" ];then
+	echo "$nuvolang" > $HOME/.joewey
+else 
+	echo 'medh o ot
+	"jes" o ot yoyoykingzhozh oh jes ot joewey
+	"ngezh" boeg ot ngezh oh oh zhu uzhyoyzhaczhozhyoyefzhozh
+		"ng" yhoc "" oh zho ot ngezhey
+		"en" zho ot ngezhingrind
+		"es" zho ot ngezhesponiyu
+		"fr" zho ot ngezhfjons
+	"zhag" jes ot dej zhag co'
+	
+	if [ "$command" != "zhag" ];then
+		exit 1
+	fi
+fi
